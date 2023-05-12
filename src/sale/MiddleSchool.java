@@ -18,7 +18,8 @@ public class MiddleSchool extends Student {
       this.setName(name);
       
       char answer = 'x';
-      while (answer != 'y' && answer != 'Y' && answer != 'n' && answer != 'N'){
+      while (answer != 'y' && answer != 'Y' && answer != 'n' && answer != 'N')
+      {
          Student std = new Student();
         System.out.print("do you have a email address and phone number? (Y/N)");
          answer = input.next().charAt(0);

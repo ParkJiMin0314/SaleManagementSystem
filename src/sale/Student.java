@@ -115,7 +115,7 @@ public class Student {
        System.out.println("Email address: ");
        String email = input.next();
 
-       emails.add("email is: "+email);
+       emails.add(email);
    }
    
 

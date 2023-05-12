@@ -10,7 +10,7 @@ public class ElementarySchoolStudent extends Student {
 
 
       public ElementarySchoolStudent(StudentKind kind) {
-    	  super(kind);
+         super(kind);
       }
       
       public void getUserInput(Scanner input) {
