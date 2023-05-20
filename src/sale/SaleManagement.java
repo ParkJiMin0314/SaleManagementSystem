@@ -1,4 +1,4 @@
-package sale; /////////
+package sale;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -11,6 +11,7 @@ public class SaleManagement {
         this.input = input;
     }
     public void addMenu() {
+       int a = 0;
         System.out.println("1 for University?");
         System.out.println("2 for High School?");
         System.out.println("3 for Middle School?");
@@ -21,35 +22,43 @@ public class SaleManagement {
         if (kind == 1) {
             student = new Student(StudentKind.University);
             student.getUserInput(input);
+            if(a == 1) {
+               return;
+            }
         }
         else if (kind == 2) {
             student = new HighSchoolStudent(StudentKind.HighSchool);
             student.getUserInput(input);
+            if(a == 1) {
+               return;
+            }
         }
         else if (kind == 3) {
             student = new MiddleSchool(StudentKind.MiddleSchool);
             student.getUserInput(input);
+            if(a == 1) {
+               return;
+            }
         }
         else if (kind == 4) {
             student = new ElementarySchoolStudent(StudentKind.ElementarySchool);
             student.getUserInput(input);
-        }
-        else {
-            System.out.println("Invalid input");
-            return;
+            if(a == 1) {
+               return;
+            }
         }
 
         Menu m = new PlusMenu();
-        System.out.print("your name:");
+        System.out.println("your name:");
         m.setName(input.next());
 
-        System.out.print("your phone number(or parent number):");
+        System.out.println("your phone number(or parent number):");
         m.setPhoneNumber(input.nextInt());
 
-        System.out.print("select hamburger:(chickenBurger, bulgogiBurger, cheeseBurger, beefBurger)");
+        System.out.println("select hamburger:(chickenBurger, bulgogiBurger, cheeseBurger, beefBurger)");
         m.setHamburger(input.next());
 
-        System.out.print("select juice:(orangeJuice, grapeJuice, cola, cider)");
+        System.out.println("select juice:(orangeJuice, grapeJuice, cola, cider)");
         m.setJuice(input.next());
 
         sales.add(m);
@@ -125,4 +134,3 @@ public class SaleManagement {
            }      
    }
 }
-

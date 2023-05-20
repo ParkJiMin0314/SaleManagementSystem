@@ -9,6 +9,8 @@ public class Student {
    public int id;
    public static ArrayList<String> emails = new ArrayList<String>();
    public String phone;
+   public int grade;
+   public int classroom;
 
    
    public Student() {
