@@ -1,9 +1,11 @@
 package sale;
 
+import java.io.Serializable;
+import java.sql.SQLInput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Student {
+public class Student implements Serializable{
    public StudentKind kind = StudentKind.University;
    public String name;
    public int id;

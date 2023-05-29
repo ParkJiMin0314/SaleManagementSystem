@@ -1,6 +1,8 @@
 package sale;
 
-public class Cost {
+import java.io.Serializable;
+
+public class Cost implements Serializable {
 	   private double burgerCost = 0;
 	   private double juiceCost = 0;
 	   Cost(){

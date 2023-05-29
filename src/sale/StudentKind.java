@@ -1,6 +1,8 @@
 package sale;
 
-public enum StudentKind {
+import java.io.Serializable;
+
+public enum StudentKind implements Serializable{
 	University,
 	HighSchool,
 	MiddleSchool,

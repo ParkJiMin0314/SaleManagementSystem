@@ -1,6 +1,8 @@
 package sale;
 
-public abstract class Menu {
+import java.io.Serializable;
+
+public abstract class Menu implements Serializable{
     public String name;
     public int phonenumber;
     public String hamburger;
