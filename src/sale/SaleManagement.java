@@ -138,5 +138,18 @@ import java.util.ArrayList;
             for (Menu menu : sales) {
                 menu.printInfo();
                 }
+
+  
+
+   
+   
          }
+		public int size() {
+			return sales.size();
+		}
+		
+		public Menu get(int index) {
+			return (Menu) sales.get(index);
+		}
+
       }

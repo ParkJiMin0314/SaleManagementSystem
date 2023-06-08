@@ -7,6 +7,7 @@ public abstract class Menu implements Serializable{
     public int phonenumber;
     public String hamburger;
     public String juice;
+	public Object get;
        
     public abstract void setName(String name);
     
